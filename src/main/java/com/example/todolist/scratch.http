@@ -1,0 +1,11 @@
+POST http://localhost:8080/tasks
+Content-Type: application/json
+
+{
+  "title": "HW",
+ "description": "You need to do hw",
+  "priority": "Not so serious",
+  "status": false
+}
+###
+GET http://localhost:8080/tasks
