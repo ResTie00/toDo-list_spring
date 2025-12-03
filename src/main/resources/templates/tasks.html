@@ -1,19 +1,23 @@
 <!DOCTYPE html>
+<meta http-equiv="refresh" content="2">
+<link rel="stylesheet" href="StyleTypeshii.css">
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>To-Do List</title>
 </head>
-<body>
+<body class="body">
 <h1>To-Do List</h1>
 
-<h2>Добавить новую задачу</h2>
-<form action="/tasks/add" method="post">
-    <input type="text" name="title" placeholder="Название" required>
-    <input type="text" name="description" placeholder="Описание">
-    <input type="text" name="priority" placeholder="Приоритет">
-    <button type="submit">Добавить</button>
-</form>
 
+<div class="content">
+    <h2>Добавить новую задачу</h2>
+    <form action="/tasks/add" method="post">
+      <input type="text" name="title" placeholder="Название" required>
+      <input type="text" name="description" placeholder="Описание">
+      <input type="text" name="priority" placeholder="Приоритет">
+      <button type="submit">Добавить</button>
+  </form>
+</div>
 <h2>Список задач</h2>
 <ul>
     <li th:each="task : ${tasks}">
@@ -24,6 +28,10 @@
 
         <form th:action="@{'/tasks/toggle/' + ${task.id}}" method="post" style="display:inline">
             <button type="submit">Переключить статус</button>
+        </form>
+        <form action="/tasks/delete" method="post">
+            <input type="hidden" name="id" value="1">
+            <button type="submit">Удалить</button>
         </form>
     </li>
 </ul>

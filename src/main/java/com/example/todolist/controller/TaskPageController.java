@@ -37,6 +37,11 @@ public class TaskPageController {
         taskService.addTask(task);
         return "redirect:/tasks/view";
     }
+    @PostMapping("/delete")
+    public  String deleteTask(@RequestParam Long id) {
+        taskService.deleteTask(id);
+        return "redirect:/tasks/view";
+    }
 
     // Переключение статуса задачи (выполнена/не выполнена)
     @PostMapping("/toggle/{id}")
