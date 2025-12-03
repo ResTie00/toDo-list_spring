@@ -1,0 +1,47 @@
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body{
+    background: linear-gradient(to right, rgba(24, 227, 110, 0.3),rgba(24, 220, 227, 0.3) );
+    font-family: "JetBrains Mono ExtraBold", Arial, "Franklin Gothic Medium";
+}
+.content{
+    font-size:large;
+    font-family: "JetBrains Mono ExtraBold", Arial, "Franklin Gothic Medium";
+    background: rgba(255,255,255,0.45);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1); 
+}
+.inputS{
+    width: auto;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,1);
+    box-shadow: 0.4px 15px rgba(30,30,30,0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+.NewUli{
+    font-family: "JetBrains Mono ExtraBold", Arial, "Franklin Gothic Medium";
+}
+.buttonStyle1{
+    border-radius: 15px;
+    width: auto;
+    height: 40px; 
+    border: 1px;
+    box-shadow: 0.4px 15px rgba(30,30,30,0.1);
+    cursor: pointer;
+}
+.buttonStyle{
+    border-radius: 15px;
+    width: auto;
+    border: black;
+    border-bottom-width: 1px;
+}
