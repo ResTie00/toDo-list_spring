@@ -30,7 +30,8 @@
             <form th:action="@{'/tasks/toggle/' + ${task.id}}" method="post" style="display:inline">
                 <button class="buttonStyle" type="submit">Переключить статус</button>
             </form>
-            <form action="/tasks/delete" method="post" style="display: inline">
+            <form th:if="${#authorization.expression('hasRole(''ADMIN'')')}"
+                    action="/tasks/delete" method="post" style="display: inline">
                 <input type="hidden" name="id" th:value="${task.id}">
                 <button class="buttonStyle" type="submit">Удалить</button>
             </form>
