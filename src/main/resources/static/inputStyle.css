@@ -1,0 +1,62 @@
+.body{
+    background: linear-gradient(to right, rgba(24, 227, 110, 0.3),rgba(24, 220, 227, 0.3) );
+    font-family: "JetBrains Mono ExtraBold", Arial, "Franklin Gothic Medium";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper{
+   margin-top:30%;
+}
+.content{
+    font-size:large;
+    font-family: "JetBrains Mono ExtraBold", Arial, "Franklin Gothic Medium";
+    background: rgba(255,255,255,0.45);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+.buttonStyle{
+    border-radius: 15px;
+    width: 100px;
+    height: 40px;
+    border: black;
+    border-bottom-width: 1px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0.4px 13px rgba(0,0,0,0.1);
+}
+.spanWrapper{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px auto;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+.spanStyle{
+    font-size: 50px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    initial-letter: normal;
+}
+.inputS{
+    width: auto;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,1);
+    box-shadow: 0.4px 15px rgba(30,30,30,0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+.ButtonWrapper{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

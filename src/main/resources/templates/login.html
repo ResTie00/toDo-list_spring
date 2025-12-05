@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" th:href="@{/inputStyle.css}">
     <title>Login</title>
 </head>
-<body>
-
-<form method="post" action="/login">
-    <input type="text" name="username" placeholder="Username"/>
-    <input type="password" name="password" placeholder="Password"/>
-    <button type="submit">Login</button>
-</form>
-
+<body class="body">
+<div class="wrapper">
+    <div class="content">
+        <div class="spanWrapper">
+            <span class="spanStyle">Verification</span>
+        </div>
+        <form method="post" action="/login">
+            <input class="inputS" type="text" name="username" placeholder="Username"/>
+            <input class="inputS" type="password" name="password" placeholder="Password"/>
+            <div class ="ButtonWrapper">
+                <button type="submit" class="buttonStyle">Login</button>
+            </div>
+        </form>
+    </div>
+</div>
 </body>
 </html>
